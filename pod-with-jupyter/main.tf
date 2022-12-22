@@ -192,34 +192,34 @@ resource "kubernetes_pod" "main" {
           memory = "${var.memory}G"
         }
       }                       
-      volume_mount {
-        mount_path = "/home/coder"
-        name       = "home-directory"
-      }        
+      # volume_mount {
+      #   mount_path = "/home/coder"
+      #   name       = "home-directory"
+      # }        
     }
-    volume {
-      name = "home-directory"
-      persistent_volume_claim {
-        claim_name = kubernetes_persistent_volume_claim.home-directory.metadata.0.name
-      }
-    }         
+    # volume {
+    #   name = "home-directory"
+    #   persistent_volume_claim {
+    #     claim_name = kubernetes_persistent_volume_claim.home-directory.metadata.0.name
+    #   }
+    # }         
   }
 }
 
-resource "kubernetes_persistent_volume_claim" "home-directory" {
-  metadata {
-    name      = "home-coder-${data.coder_workspace.me.owner}-${lower(data.coder_workspace.me.name)}"
-    namespace = var.workspaces_namespace
-  }
-  spec {
-    access_modes = ["ReadWriteOnce"]
-    resources {
-      requests = {
-        storage = "${var.disk_size}Gi"
-      }
-    }
-  }
-}
+# resource "kubernetes_persistent_volume_claim" "home-directory" {
+#   metadata {
+#     name      = "home-coder-${data.coder_workspace.me.owner}-${lower(data.coder_workspace.me.name)}"
+#     namespace = var.workspaces_namespace
+#   }
+#   spec {
+#     access_modes = ["ReadWriteOnce"]
+#     resources {
+#       requests = {
+#         storage = "${var.disk_size}Gi"
+#       }
+#     }
+#   }
+# }
 
 resource "coder_metadata" "workspace_info" {
   count       = data.coder_workspace.me.start_count
@@ -248,10 +248,10 @@ resource "coder_metadata" "workspace_info" {
     key   = "jupyter"
     value = "${var.jupyter}"
   }
-  item {
-    key   = "volume"
-    value = kubernetes_pod.main[0].spec[0].container[0].volume_mount[0].mount_path
-  }  
+  # item {
+  #   key   = "volume"
+  #   value = kubernetes_pod.main[0].spec[0].container[0].volume_mount[0].mount_path
+  # }  
 }
 
 

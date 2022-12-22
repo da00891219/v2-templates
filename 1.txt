@@ -1,0 +1,96 @@
+changelog.md:1. added a PhpStorm template with the xDebug extension
+docker-code-server/main.tf:variable "extension" {
+docker-code-server/main.tf:  description = "VS Code extension"
+docker-code-server/main.tf:    ], var.extension)
+docker-code-server/main.tf:    error_message = "Invalid VS Code extension!"  
+docker-code-server/main.tf:# install VS Code extension into code-server
+docker-code-server/main.tf:SERVICE_URL=https://open-vsx.org/vscode/gallery ITEM_URL=https://open-vsx.org/vscode/item code-server --install-extension ${var.extension}
+docker-code-server/README.md:1. Prompt user for which VS Code extension to install from the Open VSX marketplace
+docker-in-docker/main.tf:variable "extension" {
+docker-in-docker/main.tf:  description = "VS Code extension"
+docker-in-docker/main.tf:    ], var.extension)
+docker-in-docker/main.tf:    error_message = "Invalid VS Code extension!"  
+docker-in-docker/main.tf:# install VS Code extension into code-server
+docker-in-docker/main.tf:SERVICE_URL=https://open-vsx.org/vscode/gallery ITEM_URL=https://open-vsx.org/vscode/item code-server --install-extension ${var.extension}
+docker-in-docker/README.md:1. Prompt user for which VS Code extension to install from the Open VSX marketplace
+docker-with-goland/main.tf:# install VS Code extensions into code-server
+docker-with-goland/main.tf:SERVICE_URL=https://open-vsx.org/vscode/gallery ITEM_URL=https://open-vsx.org/vscode/item code-server --install-extension golang.go
+docker-with-goland/README.md:1. Add the official Golang Go VS Code extension
+docker-with-intellij/main.tf:# install VS Code extensions into code-server
+docker-with-intellij/main.tf:SERVICE_URL=https://open-vsx.org/vscode/gallery ITEM_URL=https://open-vsx.org/vscode/item code-server --install-extension redhat.java
+docker-with-intellij/README.md:1. Add the Red Hat Java VS Code extension
+docker-with-jupyter/main.tf:# install VS Code extension into code-server
+docker-with-jupyter/main.tf:SERVICE_URL=https://open-vsx.org/vscode/gallery ITEM_URL=https://open-vsx.org/vscode/item code-server --install-extension ms-toolsai.jupyter
+docker-with-jupyter/README.md:1. Install Jupyter VS Code extension
+docker-with-pycharm/main.tf:# install VS Code extensions into code-server
+docker-with-pycharm/main.tf:SERVICE_URL=https://open-vsx.org/vscode/gallery ITEM_URL=https://open-vsx.org/vscode/item code-server --install-extension mspython.python
+docker-with-pycharm/README.md:1. Add the Microsoft Python VS Code extension
+faq.md:extension](https://marketplace.visualstudio.com/vscode). But you have to
+go/pod-goland-startup-script/main.tf:variable "extension" {
+go/pod-goland-startup-script/main.tf:  description = "VS Code extension"
+go/pod-goland-startup-script/main.tf:    ], var.extension)
+go/pod-goland-startup-script/main.tf:    error_message = "Invalid VS Code extension!"  
+go/pod-goland-startup-script/main.tf:# install VS Code extensions into code-server
+go/pod-goland-startup-script/main.tf:SERVICE_URL=https://open-vsx.org/vscode/gallery ITEM_URL=https://open-vsx.org/vscode/item code-server --install-extension ${var.extension}
+go/pod-goland-startup-script/README.md:1. Show user the VS Code extension to use
+pod-with-clion-rust/main.tf:variable "extension" {
+pod-with-clion-rust/main.tf:  description = "Rust VS Code extension"
+pod-with-clion-rust/main.tf:    ], var.extension)
+pod-with-clion-rust/main.tf:    error_message = "Invalid Rust VS Code extension!"  
+pod-with-clion-rust/main.tf:# install Rust and rust-analyzer VS Code extensions into code-server
+pod-with-clion-rust/main.tf:SERVICE_URL=https://open-vsx.org/vscode/gallery ITEM_URL=https://open-vsx.org/vscode/item code-server --install-extension ${var.extension}
+pod-with-clion-rust/README.md:1. Prompt user for which Rust VS Code extension to use
+pod-with-jupyter/main.tf:# install VS Code extension into code-server
+pod-with-jupyter/main.tf:SERVICE_URL=https://open-vsx.org/vscode/gallery ITEM_URL=https://open-vsx.org/vscode/item code-server --install-extension ms-toolsai.jupyter
+pod-with-jupyter/README.md:1. Install Jupyter VS Code extension
+pod-with-php/main.tf:    # install VS Code extensions for PHP development and debugging
+pod-with-php/main.tf:    SERVICE_URL=https://open-vsx.org/vscode/gallery ITEM_URL=https://open-vsx.org/vscode/item code-server --install-extension KnisterPeter.vscode-github &
+pod-with-php/main.tf:    SERVICE_URL=https://open-vsx.org/vscode/gallery ITEM_URL=https://open-vsx.org/vscode/item code-server --install-extension felixfbecker.php-debug &
+pod-with-php/README.md:1. Install VS Code extensions from Open-VSX marketplace
+pod-with-phpstorm/main.tf:    # install VS Code extensions for PHP development and debugging
+pod-with-phpstorm/main.tf:    SERVICE_URL=https://open-vsx.org/vscode/gallery ITEM_URL=https://open-vsx.org/vscode/item code-server --install-extension KnisterPeter.vscode-github &
+pod-with-phpstorm/main.tf:    SERVICE_URL=https://open-vsx.org/vscode/gallery ITEM_URL=https://open-vsx.org/vscode/item code-server --install-extension felixfbecker.php-debug &
+pod-with-phpstorm/README.md:1. Install VS Code extensions from Open-VSX marketplace
+pod-with-ruby/main.tf:    # install VS Code extensions for Ruby development and debugging
+pod-with-ruby/main.tf:    SERVICE_URL=https://open-vsx.org/vscode/gallery ITEM_URL=https://open-vsx.org/vscode/item code-server --install-extension rebornix.ruby &
+pod-with-ruby/README.md:1. Install VS Code Ruby debugger extension from Open-VSX marketplace
+the-archives/pod-w-idea-comm-vsc-img/main.tf:# run configure script to add VS Code extensions and copy JetBrains projector files to $HOME
+the-archives/pod-w-idea-comm-vsc-img/README.md:1. A `configure` script to install VS Code extensions and copy Projector files to `$HOME`
+the-archives/pod-w-idea-comm-vsc-img/README.md:1. Install VS Code extensions from Open-VSX marketplace
+the-archives/pod-w-idea-ult-vsc-img/main.tf:# run configure script to add VS Code extensions and copy JetBrains projector files to $HOME
+the-archives/pod-w-idea-ult-vsc-img/README.md:1. A `configure` script to install VS Code extensions and copy Projector files to `$HOME`
+the-archives/pod-w-idea-ult-vsc-img/README.md:1. Install VS Code extensions from Open-VSX marketplace
+the-archives/pod-w-mult-idea-comm-img/main.tf:# run configure script to add VS Code extensions and copy JetBrains projector files to $HOME
+the-archives/pod-w-mult-idea-comm-img/README.md:1. A `configure` script to install VS Code extensions and copy Projector files to `$HOME`
+the-archives/pod-w-mult-idea-comm-img/README.md:1. Install VS Code extensions from Open-VSX marketplace
+the-archives/pod-w-phpstorm-vsc-img/main.tf:# run configure script to add VS Code extensions and copy JetBrains projector files to $HOME
+the-archives/pod-w-phpstorm-vsc-img/README.md:1. A `configure` script to install VS Code extensions and copy Projector files to `$HOME`
+the-archives/pod-w-phpstorm-vsc-img/README.md:1. Install VS Code extensions from Open-VSX marketplace
+the-archives/pod-w-pycharm-comm-vsc-img/main.tf:# run configure script to add VS Code extensions and copy JetBrains projector files to $HOME
+the-archives/pod-w-pycharm-comm-vsc-img/README.md:1. A `configure` script to install VS Code extensions and copy Projector files to `$HOME`
+the-archives/pod-w-pycharm-comm-vsc-img/README.md:1. Install VS Code extensions from Open-VSX marketplace
+the-archives/pod-w-pycharm-pro-vsc-img/main.tf:# run configure script to add VS Code extensions and copy JetBrains projector files to $HOME
+the-archives/pod-w-pycharm-pro-vsc-img/README.md:1. A `configure` script to install VS Code extensions and copy Projector files to `$HOME`
+the-archives/pod-w-pycharm-pro-vsc-img/README.md:1. Install VS Code extensions from Open-VSX marketplace
+the-archives/pod-with-intellij/main.tf:variable "extension" {
+the-archives/pod-with-intellij/main.tf:  description = "VS Code extension"
+the-archives/pod-with-intellij/main.tf:    ], var.extension)
+the-archives/pod-with-intellij/main.tf:    error_message = "Invalid VS Code extension!"  
+the-archives/pod-with-intellij/main.tf:# install VS Code extensions into code-server
+the-archives/pod-with-intellij/main.tf:SERVICE_URL=https://open-vsx.org/vscode/gallery ITEM_URL=https://open-vsx.org/vscode/item code-server --install-extension ${var.extension}
+the-archives/pod-with-intellij/README.md:1. Show user the VS Code extension to use
+the-archives/pod-with-intellij-projects/README.md:1. Show user the VS Code extension to use
+the-archives/pod-with-pycharm/main.tf:variable "extension" {
+the-archives/pod-with-pycharm/main.tf:  description = "VS Code extension"
+the-archives/pod-with-pycharm/main.tf:    ], var.extension)
+the-archives/pod-with-pycharm/main.tf:    error_message = "Invalid VS Code extension!"  
+the-archives/pod-with-pycharm/main.tf:# install VS Code extensions into code-server
+the-archives/pod-with-pycharm/main.tf:SERVICE_URL=https://open-vsx.org/vscode/gallery ITEM_URL=https://open-vsx.org/vscode/item code-server --install-extension ${var.extension} 
+the-archives/pod-with-pycharm/README.md:1. Show user the VS Code extension to use
+the-archives/pod-with-rubymine/main.tf:variable "extension" {
+the-archives/pod-with-rubymine/main.tf:  description = "VS Code extension"
+the-archives/pod-with-rubymine/main.tf:    ], var.extension)
+the-archives/pod-with-rubymine/main.tf:    error_message = "Invalid VS Code extension!"  
+the-archives/pod-with-rubymine/main.tf:# install VS Code extensions into code-server
+the-archives/pod-with-rubymine/main.tf:SERVICE_URL=https://open-vsx.org/vscode/gallery ITEM_URL=https://open-vsx.org/vscode/item code-server --install-extension ${var.extension}
+the-archives/pod-with-rubymine/README.md:1. Show user the VS Code extension to use (XDebug for debugging)
